@@ -22,7 +22,6 @@ $(document).ready(function() {
   $('#feed2').click(function() {
     const newPlant = plant2(redFood);
     $('#soil-value2').text(newPlant.soil);
-    $('#water-value2').text(newPlant.water);
   });
   $('#water2').click(function() {
     const newPlant = plant2(wateringCan);
