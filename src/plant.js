@@ -13,11 +13,7 @@ const storeState = () => {
   return (stateChangeFunction) => {
     const newState = stateChangeFunction(currentState);
     currentState = {...newState};
-    // return (stateChangeFunction2) => {
-    //   const newState = stateChangeFunction2(currentState);
-    //   currentState = {...newState};
-    //   return newState;
-    // }
+      return newState;
   };
 };
 export const stateChanger = storeState();
@@ -38,7 +34,7 @@ const changeState = (prop) => {
 // const plant2 = new Plant();
 // const plant3 = new Plant();
 
-const doubleFoodChanger = () => {
+const doubleFoodStore = () => {
   let currentState = {};
   return (stateChangeFunction) => {
     const newState = stateChangeFunction(currentState);
@@ -46,6 +42,8 @@ const doubleFoodChanger = () => {
     return newState;
   }
 }
+
+export const doubleFoodChanger = doubleFoodStore();
 // blueFood(plant1);
 
 // const feed = changeState("soil");
