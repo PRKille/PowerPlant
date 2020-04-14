@@ -23,8 +23,6 @@ oldCar.sound();
 sleepyBear.sound();
 
 
-
-
 function robotThrow(name) {
   return function(distance) {
     return function(speed) {
@@ -35,3 +33,5 @@ function robotThrow(name) {
 
 const robot = robotThrow("Robot")("200")("0.1");
 robot;
+
+
